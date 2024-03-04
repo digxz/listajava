@@ -2,10 +2,10 @@ package Algoritmos;
 
 import java.util.Scanner;
 
-public class Exercicio4 {
+public class Exercicio04 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        double pesoDoSacoEmQuilos, pesoDoSacoEmGramas, quantidadeDiaria, quantidadeFinal, resto;
+        double pesoDoSacoEmQuilos, pesoDoSacoEmGramas, quantidadeDiaria, quantidadeFinal, resto, restoEmKg;
 
         //Recebe em quilos, converte para gramas, e calcula quanto resta em gramas.
 
@@ -16,11 +16,12 @@ public class Exercicio4 {
     quantidadeDiaria = entrada.nextDouble();
 
     pesoDoSacoEmGramas = pesoDoSacoEmQuilos * 1000;
-    quantidadeFinal = quantidadeDiaria * 5;
+    quantidadeFinal = quantidadeDiaria * 5 * 2;
+
 
     resto = pesoDoSacoEmGramas - quantidadeFinal;
-
-    System.out.println("O restante de ração após os 5 dias em gramas é: " + resto);
+    restoEmKg = resto / 1000;
+    System.out.println("O restante de ração após os 5 dias em quilogramas é: " + restoEmKg);
 
 
     }

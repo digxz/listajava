@@ -2,7 +2,7 @@ package Algoritmos;
 
 import java.util.Scanner;
 
-public class Exercicio8 {
+public class Exercicio08 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         double valorEmDolar, cotacaoDolar, valorEmReal;

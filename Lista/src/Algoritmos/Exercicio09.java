@@ -1,10 +1,10 @@
 package Algoritmos;
 
 import java.util.Scanner;
-public class Exercicio7 {
+public class Exercicio09 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        double varA, varB, diferenca, quadrado;
+        double varA, varB, varC, soma, quadrado;
 
         System.out.print("Digite a variável A: ");
         varA = entrada.nextDouble();
@@ -12,10 +12,12 @@ public class Exercicio7 {
         System.out.print("Digite a variável B: ");
         varB = entrada.nextDouble();
 
-        diferenca = varA - varB;
-        quadrado = diferenca * diferenca;
+        System.out.print("Digite a variável C: ");
+        varC = entrada.nextDouble();
 
-        System.out.println("O quadrado da diferença entre as variáveis resulta em: " + quadrado);
+        soma = varA + varB + varC;
+        quadrado = soma * soma;
 
+        System.out.println("O quadrado da soma entre as variáveis resulta em: " + quadrado);
     }
 }
