@@ -23,6 +23,5 @@ public class Exercicio10 {
         System.out.println("A multiplicação das variáveis resulta em: " + multiplicacao);
         System.out.println("A divisão das variáveis resulta em: " + divisao);
 
-
     }
 }
